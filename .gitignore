@@ -1,3 +1,2 @@
 *.sw?
-_site/**.pillar
-_site/README.md
+_site/

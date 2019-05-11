@@ -1,0 +1,27 @@
+! Industry examples for SLIs/SLOs
+
+% TODO(holgerf): Provide both a service examples and class examples...
+
+!! DNS on AWS (Route53)
+
+The current *SLA>https://aws.amazon.com/route53/sla/* promises 100\%
+availability. There is no promise for serving latency, update propagation
+delay and durability of your change.
+
+| Period   |{ Calendar month |
+| Kind     |{ Availability |
+| Measured |{ Not described |
+| Note     |{ Four minutes and 59 seconds downtime (99.9886\%) a month before getting a credit. |
+
+-
+
+!! DNS on Google Cloud
+
+The current *SLA>https://cloud.google.com/dns/sla* defines 100% availability.
+There is no promise for serving latency, update propagation delay and durability
+of your change.
+
+| Period   |{ Calendar month |
+| Kind     |{ Bad minute availability |
+| Measured |{ Not described |
+| Note     |{ Fractional bad minutes are not counted. Service could have a constant error rate. |

@@ -104,28 +104,65 @@
 
         <section id="main_content">
 	<section>
-<h1>A brief introduction to this site</h1>
+<h1> Industry examples for SLIs/SLOs</h1>
+
+
+<section>
+<h2> DNS on AWS (Route53)</h2>
 
 <p>
-What does SLI/SLO/SLA actually mean, how do they relate and why does it matter?
-This site is my attempt to collect useful information and help with answering
-these questions.
+The current <a href="https://aws.amazon.com/route53/sla/">SLA</a> promises 100%
+availability. There is no promise for serving latency, update propagation
+delay and durability of your change.
 </p>
+<table style="border: solid thin"><tr><td> Period   </td>
+<td style="text-align: left"> Calendar month </td>
+<td></td>
+</tr>
+<tr><td> Kind     </td>
+<td style="text-align: left"> Availability </td>
+<td></td>
+</tr>
+<tr><td> Measured </td>
+<td style="text-align: left"> Not described </td>
+<td></td>
+</tr>
+<tr><td> Note     </td>
+<td style="text-align: left"> Four minutes and 59 seconds downtime (99.9886%) a month before getting a credit. </td>
+<td></td>
+</tr>
+</table>
+
+<ul>
+<li></li>
+</ul>
+
+</section><section>
+<h2> DNS on Google Cloud</h2>
+
 <p>
-I have worked on making things more reliable my entire career, run production
-services, but my journey into becoming a proper SRE is linked to the topic of
-SLIs and SLOs. It took me a fair amount of time to realize of how essential they
-are to being an SRE and running production services in general.
+The current <a href="https://cloud.google.com/dns/sla">SLA</a> defines 100% availability.
+There is no promise for serving latency, update propagation delay and durability
+of your change.
 </p>
-<p>
-But finding good SLIs and measuring them in a reasonable way remains a difficult
-challenge for me. I hope I can collect good examples that inspire us to create
-good SLIs ourselves.
-</p>
-<p>
-In the long run this will hopefully expand from a view on SLIs/SLOs to how
-to achieve higher versions.
-</p></section>
+<table style="border: solid thin"><tr><td> Period   </td>
+<td style="text-align: left"> Calendar month </td>
+<td></td>
+</tr>
+<tr><td> Kind     </td>
+<td style="text-align: left"> Bad minute availability </td>
+<td></td>
+</tr>
+<tr><td> Measured </td>
+<td style="text-align: left"> Not described </td>
+<td></td>
+</tr>
+<tr><td> Note     </td>
+<td style="text-align: left"> Fractional bad minutes are not counted. Service could have a constant error rate. </td>
+<td></td>
+</tr>
+</table>
+</section></section>
 	</section>
 		<footer class="footer">
           This website is developed using <a href="https://github.com/pillar-markup/pillar-documentation">Pillar</a> and Ecstatic<br>

@@ -1,0 +1,24 @@
+! Glossary
+
+-Service Level Indicators (""SLI"")
+;An SLI is a service level indicator—a carefully defined quantitative measure of
+;some aspect of the level of service that is provided. Common SLIs include
+;"request latency" or "error rate".
+;*Source of the definition>https://landing.google.com/sre/sre-book/chapters/service-level-objectives/*
+
+-Service Level Objective (""SLO"")
+;An SLO is a service level objective: a target value or range of values for a
+;service level that is measured by an SLI. A natural structure for SLOs is thus
+;SLI ≤ target, or lower bound ≤ SLI ≤ upper bound.
+;*Source of the definition>https://landing.google.com/sre/sre-book/chapters/service-level-objectives/*
+
+-Service Level Agreement (""SLA"")
+;SLAs are service level agreements: an explicit or implicit contract with your
+;users that includes consequences of meeting (or missing) the SLOs they contain
+;*Source of the definition>https://landing.google.com/sre/sre-book/chapters/service-level-objectives/*
+
+-Error budget
+;The headroom above a SLA. The acceptable amount of time a service may have
+; issues. It is the result of identifying and agreeing on the risk tolerance of
+;a service. Used to control the rate of releases.
+;*See a Presentation>https://www.usenix.org/node/189332*

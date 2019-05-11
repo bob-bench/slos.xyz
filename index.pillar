@@ -1,0 +1,17 @@
+!A brief introduction to this site
+
+What does SLI/SLO/SLA actually mean, how do they relate and why does it matter?
+This site is my attempt to collect useful information and help with answering
+these questions.
+
+I have worked on making things more reliable my entire career, run production
+services, but my journey into becoming a proper SRE is linked to the topic of
+SLIs and SLOs. It took me a fair amount of time to realize of how essential they
+are to being an SRE and running production services in general.
+
+But finding good SLIs and measuring them in a reasonable way remains a difficult
+challenge for me. I hope I can collect good examples that inspire us to create
+good SLIs ourselves.
+
+In the long run this will hopefully expand from a view on SLIs/SLOs to how
+to achieve higher versions.

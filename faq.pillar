@@ -1,0 +1,33 @@
+! Frequently Asked Questions
+
+!What is a "happy SLO"?
+
+A "happy SLO" is a SLO if mostly met keeps/makes users of your service happy.
+This class of SLO balances the temptation of higher availability with something
+that is good enough given the requirements/users of a service.
+
+Offering higher availability comes at a short and long term cost for developing,
+maintaining and operating the service. Testing can become more complex due the
+need to cover more graceful degradation paths as dependencies have to become
+optional, having to deal with redundancy/replication or making it work across
+continents, deployments get bigger and more complex, the error budget and
+alerting threshold will become smaller with a higher risk of pager fatigue and
+many more.
+
+
+!When/Why to not exceed the SLO?
+
+If a service exceeds its SLO over a long period of time users are likely to
+expect the observed availability and not the promised one. Your service might
+become a core dependency when it should be an optional one.
+
+By forcing a service to not exceed its SLO the observed reliability will be the
+to be expected one. The forced *Global Chubby
+outage>https://landing.google.com/sre/sre-book/chapters/service-level-objectives/#xref_risk-management_global-chubby-planned-outage*
+is a well known application of this.
+
+
+!What's a good SLO target?
+
+Identify the core dependencies of your service and their SLOs. These will form
+the upper bound of your availability. Now attempt to define a "happy SLO".
